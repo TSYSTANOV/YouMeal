@@ -1,0 +1,100 @@
+@import "fonts.css";
+@import "default.css";
+@import "header.css";
+@import "cart.css";
+@import "cards.css";
+@import "footer.css";
+@import "modal.css";
+body {
+  background-color: #f9f9f9;
+}
+ul li {
+  list-style: none;
+}
+.scrollbar_main_title_item {
+  color: #000;
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 50px;
+  background: #fff;
+  padding: 8px 8px 8px 40px;
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  outline-offset: -2px;
+  transition: 0.1s;
+}
+.item1 {
+  background-image: url(images/item1.png);
+}
+.item2 {
+  background-image: url(images/item2.png);
+}
+.item3 {
+  background-image: url(images/item3.png);
+}
+.item4 {
+  background-image: url(images/item4.png);
+}
+.item5 {
+  background-image: url(images/item5.png);
+}
+.item6 {
+  background-image: url(images/item6.png);
+}
+.item7 {
+  background-image: url(images/item7.png);
+}
+.item8 {
+  background-image: url(images/item4.png);
+}
+.scrollbar_main_title {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+.scrollbar_main {
+  margin-bottom: 30px;
+}
+.active_item {
+  background-color: #ffab08;
+}
+.scrollbar_main_title_item:hover,
+.scrollbar_main_title_item:active {
+  background-color: #ffab08;
+}
+.scrollbar_main_title_item:focus-visible {
+  outline: 2px solid #ffab08;
+}
+.catalog_start {
+  margin: 0px auto 80px auto;
+}
+@media (min-width: 1024px) {
+  .scrollbar_main_title_item {
+    font-size: 16px;
+  }
+  .scrollbar_main_title {
+    gap: 24px;
+    justify-content: center;
+  }
+  .scrollbar_main {
+    margin-bottom: 50px;
+  }
+  .catalog_start {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0px auto 100px auto;
+  }
+  .cards_items_card {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 1440px) {
+  .scrollbar_main_title {
+    gap: 38px;
+  }
+}
