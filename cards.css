@@ -152,3 +152,8 @@
     grid-row-gap: 30px;
   }
 }
+
+.active__product__cards
+{
+  background-color: #ffad0894;
+}

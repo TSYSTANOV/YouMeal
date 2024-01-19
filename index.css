@@ -61,6 +61,7 @@ ul li {
 }
 .active_item {
   background-color: #ffab08;
+  pointer-events: none;
 }
 .scrollbar_main_title_item:hover,
 .scrollbar_main_title_item:active {
@@ -97,4 +98,45 @@ ul li {
   .scrollbar_main_title {
     gap: 38px;
   }
+}
+.cards_items__products
+{
+  opacity:0;
+  /* transition:0.5s; */
+  transform: scale(0.5);
+}
+.greyPrice
+{
+  background-color: grey;
+}
+.specialBtn
+{
+  border: 2px solid black;
+}
+.information
+{
+  position: fixed;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  z-index: 3000;
+  height: 200px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: yellow;
+}
+.information > span
+{
+  position: absolute;
+  top:10px;
+  right:10px;
+  font-size:15px;
+  border: 3px solid black;
+  padding: 5px;
+  border-radius: 10px;
 }

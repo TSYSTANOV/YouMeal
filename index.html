@@ -73,16 +73,22 @@
       <div class="scrollbar_main">
         <div class="container">
           <ul class="scrollbar_main_title">
-            <a href="#!" class="scrollbar_main_title_item item1 active_item">
+            <a href="#!" data-item-id='Все' class="scrollbar_main_title_item item1">
+              Все товары
+            </a>
+            <a href="#!" data-item-id='Бургери' class="scrollbar_main_title_item item1">
               Бургеры
             </a>
-            <a href="#!" class="scrollbar_main_title_item item2">Сосиски</a>
-            <a href="#!" class="scrollbar_main_title_item item3">Бургеры</a>
-            <a href="#!" class="scrollbar_main_title_item item4">Кетчупы</a>
+            <a href="#!" data-item-id='Сосиски' class="scrollbar_main_title_item item2">Сосиски</a>
+            <a href="#!" data-item-id='Мороженное' class="scrollbar_main_title_item item3">Мороженное</a>
+            <button class="scrollbar_main_title_item" data-id-price = 'LowPrice' >Низкая цена</button>
+            <button class='scrollbar_main_title_item' data-id-price= 'HighPrice' >Высокая цена</button>
+            <button class='scrollbar_main_title_item specialBtn' data-id-price= 'Delete' >Сбросить фильтр</button>
+            <!-- <a href="#!" class="scrollbar_main_title_item item4">Кетчупы</a>
             <a href="#!" class="scrollbar_main_title_item item5">Бургеры</a>
             <a href="#!" class="scrollbar_main_title_item item6">Супчики</a>
             <a href="#!" class="scrollbar_main_title_item item7">Брокколли</a>
-            <a href="#!" class="scrollbar_main_title_item item8">Бургеры</a>
+            <a href="#!" class="scrollbar_main_title_item item8">Бургеры</a> -->
           </ul>
         </div>
       </div>
@@ -93,10 +99,11 @@
             <div class="cart_container">
               <button class="cart_container_title">
                 <h2 class="cart_container_title_button">Корзина</h2>
-                <span>4</span>
+                <span class="totalItems">0</span>
               </button>
               <div class="cart__open">
-                <div class="cart_container_content">
+                <!-- <div class="cartGeneral__content"> -->
+                <!-- <div class="cart_container_content">
                   <div class="cart_container_content_card">
                     <img src="images/Rectangle 2.png" alt="burger" />
                     <div class="card_text">
@@ -136,7 +143,8 @@
                       <button class="plus_number">+</button>
                     </div>
                   </div>
-                </div>
+                </div> -->
+                <!-- <div class="cart_container__footer__block">
                 <div class="cart_container_footer">
                   <p>Итого</p>
                   <p>1029 <span>₽</span></p>
@@ -146,14 +154,20 @@
                   <p>Бесплатная доставка</p>
                   <button>Свернуть</button>
                 </div>
-              </div>
+              </div> -->
+            <!-- </div> -->
+          </div>
+          <div class="cart_container_footer_info">
+            <p>Бесплатная доставка</p>
+            <button>Свернуть</button>
+          </div>
             </div>
             <!--start second section-->
             <div class="cards_items_card">
               <div class="cards_items_title">
                 <h2>Бургеры</h2>
               </div>
-              <div class="cards_items__products">
+              <!-- <div class="cards_items__products">
                 <div class="item__product">
                   <img src="images/photo.png" alt="burger" />
                   <p class="item__product1">689<span> ₽</span></p>
@@ -196,7 +210,7 @@
                   <p class="product_detail">512г</p>
                   <button>Добавить</button>
                 </div>
-              </div>
+              </div> -->
             </div>
             <!--end second section-->
           </section>
@@ -392,7 +406,8 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal_non_display">
+    <!--  -->
+    <!-- <div class="modal modal_non_display">
       <div class="modal__card">
         <div class="modal__card-title"><h2>Мясная бомба</h2></div>
         <div class="modal__card_information">
@@ -454,8 +469,9 @@
           </svg>
         </button>
       </div>
-    </div>
-    <div class="modal modal_non_display">
+    </div> -->
+    <!--  -->
+    <!-- <div class="modal modal_non_display">
       <div class="modal__card modal__card_color">
         <div class="modal__card-form-size">
           <div class="modal__card-title__item"><h2>Доставка</h2></div>
@@ -524,6 +540,8 @@
           </svg>
         </button>
       </div>
-    </div>
+    </div> -->
   </body>
-</html>
+  <script src="data.js"></script>
+  <script src="index.js"></script>
+</html> 
