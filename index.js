@@ -77,7 +77,7 @@ btnPrice.forEach((el)=>
 })
 
 function renderGoods(id,array)
-{
+{console.log(array)
     let newArray = JSON.parse(JSON.stringify(array))
     let filterArray = newArray.filter((el)=>
     {
@@ -600,7 +600,7 @@ function clearAllProductCart()
     console.log(productCart)
 
 }
-let number = 1
+
 function modalWindowGood(id)
 {
     return()=>
@@ -689,7 +689,7 @@ function modalWindowGood(id)
     }
     else
     {   
-        // let number = 1
+        let number = 1
         let item = data.find((el)=>
         {
             if(el.id === id)
